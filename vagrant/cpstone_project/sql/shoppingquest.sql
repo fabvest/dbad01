@@ -43,16 +43,16 @@ CREATE INDEX "idx_task__quest" ON "task" ("quest");
 
 ALTER TABLE "task" ADD CONSTRAINT "fk_task__quest" FOREIGN KEY ("quest") REFERENCES "quest" ("id");
 
-CREATE TABLE user (
-  id INTEGER PRIMARY KEY,
-  login TEXT NOT NULL,
-  password TEXT NOT NULL,
-  date_joined DATE NOT NULL,
-  phone_number TEXT,
-  email TEXT,
-  is_superuser BOOLEAN NOT NULL,
-  device_id INTEGER NOT NULL,
-  points INTEGER NOT NULL
+CREATE TABLE "user" (
+  "id" INTEGER PRIMARY KEY,
+  "login" TEXT NOT NULL,
+  "password" TEXT NOT NULL,
+  "date_joined" DATE NOT NULL,
+  "phone_number" TEXT,
+  "email" TEXT,
+  "is_superuser" BOOLEAN NOT NULL,
+  "device_id" INTEGER NOT NULL,
+  "points" INTEGER NOT NULL
 );
 
 CREATE TABLE "user_discount" (
